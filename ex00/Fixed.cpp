@@ -30,9 +30,9 @@ Fixed::~Fixed()
 ** --------------------------------- OVERLOAD ---------------------------------
 */
 
-Fixed &		Fixed::operator = ( Fixed const & rhs )
+Fixed &		Fixed::operator= ( Fixed const & rhs )
 {
-	std::cout << "Assignation operator called" << std::endl;
+	std::cout << "Copy assignment operator called" << std::endl;
 	_rawBits = rhs.getRawBits();
 	return *this;
 }

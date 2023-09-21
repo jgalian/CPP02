@@ -40,14 +40,14 @@ Fixed::~Fixed()
 ** --------------------------------- OVERLOAD ---------------------------------
 */
 
-Fixed &		Fixed::operator = ( Fixed const & rhs )
+Fixed &		Fixed::operator= ( Fixed const & rhs )
 {
-	std::cout << "Assignation operator called" << std::endl;
+	std::cout << "Copy assignment operator called" << std::endl;
 	_rawBits = rhs._rawBits;
 	return *this;
 }
 
-std::ostream &	operator << ( std::ostream & o, Fixed const & i )
+std::ostream &	operator<< ( std::ostream & o, Fixed const & i )
 {
 	o << i.toFloat();
 	return o;
